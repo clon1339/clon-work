@@ -2,11 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Unity</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
-    <script src=""></script>
-
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/unity.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="TetrisBuild/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "TetrisBuild/WebGl2.json", {onProgress: UnityProgress});
+    </script>
   </head>
 
   <body>
@@ -24,8 +28,17 @@
           </div>
         </nav>
       </header>
-
-      <p>HOMEです。</p>
+      <h1>Unity</h1>
+      <div class="webgl-content">
+        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+          <div class="title">テトリス</div>
+        </div>
+        <h3>テトリス操作方法</h3>
+        <p>「A：左移動、D：右移動、←：左回転、→：右回転、↓：加速」</p>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

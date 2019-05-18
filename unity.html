@@ -2,22 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Unity</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/unity.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/hitenebuild.json", {onProgress: UnityProgress});
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src=""></script>
+
   </head>
 
   <body>
     <div class="container">
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
             <a class="navbar-brand" href="index.html">くろんの砂場</a>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -25,18 +20,18 @@
               <li class="nav-item"><a class="nav-link" href="unity.html">Unity</a></li>
             </ul>
 
-          </div>
         </nav>
       </header>
-      <h1>Unity</h1>
-      <div class="webgl-content">
-        <div id="gameContainer" style="width: 450px; height: 800px"></div>
-        <div class="footer">
-          <div class="webgl-logo"></div>
-          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-          <div class="title">hitEnemy</div>
-        </div>
-      </div>
+      <p>※環境によっては正常に動作しない可能性があります。</p>
+      <ul>
+        <li><a href="hitene.html">hitene</a></li>
+        <li><a href="rollaball.html">玉転がし</a></li>
+        <p>*玉転がしはバグります絶対に開かないでください。</p>
+        <li><a href="tetris.html">テトリスver0.0.1</a></li>
+      </ul>
+      <h3>テトリス操作方法</h3>
+      <p>「A：左移動、D：右移動、←：左回転、→：右回転、↓：加速」</p>
+      <footer></footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
